@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for a single list item -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_item_height"
+                android:background="@color/tan_background"
+                android:minHeight="@dimen/list_item_height"
+                android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/image"
+        style="@style/imageViewStyle"/>
+
+    <RelativeLayout
+        android:id="@+id/textViewsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/image"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:id="@+id/miwokTextView"
+            style="@style/miwokTextViewStyle"
+            tools:text="lutti"/>
+
+        <TextView
+            android:id="@+id/englishTextView"
+            style="@style/englishTextViewStyle"
+            tools:text="one"/>
+
+        <ImageView
+            android:id="@+id/playButton"
+            style="@style/playButtonStyle"
+            android:src="@drawable/ic_play_arrow_white_36dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>
